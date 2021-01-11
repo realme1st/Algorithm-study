@@ -4,6 +4,8 @@ money = []
 for i in range(n):
     money.append(int(input()))
 
+
+
 for i in range(n-1,-1,-1):
     if k==0:
         break
