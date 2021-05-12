@@ -5,4 +5,4 @@ b=list(map(int,input().split()))
 
 b.sort()
 
-print(b[0]*b[-2])
+print(b[0]*b[-1])
