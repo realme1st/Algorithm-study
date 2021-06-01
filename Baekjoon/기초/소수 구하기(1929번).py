@@ -4,7 +4,7 @@ check[0] = check[1] = True # 0과 1은 예외로 지웠다 함
 
 
 for i in range(2,MAX+1):
-    if check[i]:
+    if not check[i]:
         
         j = i+i
         while j<=MAX:
