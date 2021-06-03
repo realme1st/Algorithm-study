@@ -1,3 +1,4 @@
+import sys
 n = 9
 a = [int(input()) for _ in range(n)]
 a.sort()
@@ -10,4 +11,4 @@ for i in range(0,n):
                 if i ==k or j==k:
                     continue
                 print(a[k])
-            break
+            sys.exit(0)
