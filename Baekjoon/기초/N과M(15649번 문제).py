@@ -1,10 +1,10 @@
-n,m = map(int,input().split()) #n까지 m개
+n,m = map(int,input().split())#n까지 m개
 
-c = [False] *(n+1)
+c = [False]*(n+1) # c[i]: i를 사용했으면 True
 
-a = [0]*m
+a = [0] *m #a: 고른 수열을 저장
 
-def go (index,n,m):
+def go(index,n,m):
     if index == m:
         print(" ".join(map(str,a)))
         return
@@ -17,3 +17,5 @@ def go (index,n,m):
         c[i] = False
 
 go(0,n,m)
+
+#go 함수 index번째 수를 결정
