@@ -1,14 +1,15 @@
-import sys
-n = 9
-a = [int(input()) for _ in range(n)]
-a.sort()
-total = sum(a)
+n= [int(input()) for _ in range(9)]
 
-for i in range(0,n):
-    for j in range(i+1,n):
-        if total - a[i] - a[j] ==100:
-            for k in range(0,n):
-                if i ==k or j==k:
-                    continue
-                print(a[k])
-            sys.exit(0)
+total=sum(n)
+
+for i in range(9):
+    for j in range(i+1,9):
+        if 100 == total - (n[i]+n[j]):
+            num1,num2 = n[i],n[j]
+            
+n.remove(num1)
+n.remove(num2)
+n.sort()
+
+for i in n:
+    print(i)
