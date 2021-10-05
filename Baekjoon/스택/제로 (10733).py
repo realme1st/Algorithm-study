@@ -9,4 +9,7 @@ for _ in range(k):
     else:
         result.pop()
 
-print(sum(result))
+if len(result)==0:
+    print(0)
+else:
+    print(sum(result))
