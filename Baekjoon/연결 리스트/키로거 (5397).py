@@ -16,6 +16,5 @@ for _ in range(n):
                 left_stack.append(right_stack.pop())
         else:
             left_stack.append(i)
-    print((left_stack.extend(reversed(right_stack))))
-    print(left_stack)
+    
     print(''.join(left_stack+list(reversed(right_stack))))
