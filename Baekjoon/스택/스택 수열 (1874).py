@@ -21,7 +21,7 @@ for _ in range(n):
 if temp==False:
     print("NO")
 else:
-    for i in data:
+    for i in answer:
         print(i)
         
     
