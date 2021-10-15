@@ -3,7 +3,7 @@ import sys
 n= int(sys.stdin.readline())
 stack_1=[]
 answer=[]
-top_list=list(sys.stdin.readline().split())
+top_list=list(map(int,sys.stdin.readline().split()))
 
 for i in range(n):
     while stack_1:
