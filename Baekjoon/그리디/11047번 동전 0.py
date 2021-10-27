@@ -1,17 +1,18 @@
-n,k = map(int,input().split())
-num=0
-money = []
-for i in range(n):
-    money.append(int(input()))
+n,k=map(int,input().split())
 
+coin=[int(input()) for i in range(n)]
 
+count=0
 
-for i in range(n-1,-1,-1):
+coin.sort(reverse=True)
+
+while True:
+    for i in coin:
+        if k<i:
+            continue
+        count+=k//i
+        k%=i
+
     if k==0:
         break
-    if money[i]>k:
-        continue
-    num+=k//money[i]
-    k%=money[i]
-    
-print(num)
+print(count)
