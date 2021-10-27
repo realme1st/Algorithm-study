@@ -1,14 +1,13 @@
-n= int(input())
+n=int(input())
 
-time = list(map(int,input().split()))
+data=list(map(int,input().split()))
 
-time.sort()
+data.sort()
 
-result =0
-pre=0;
-for i in time:
-    pre+=i
-    result+=pre
+result=0
+temp=0
+for i in data:
+    temp+=i
+    result+=temp
 
 print(result)
-    
