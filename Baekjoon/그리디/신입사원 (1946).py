@@ -1,8 +1,6 @@
 import sys
 t= int(input())
 
-
-
 for _ in range(t):
     data=[]
     count=1
