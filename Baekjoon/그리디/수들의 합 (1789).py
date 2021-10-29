@@ -9,4 +9,4 @@ while True:
         break
     n+=1
 
-print(n)
+print(n-1)
